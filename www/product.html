@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>secondew app</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+		<h1>Second Page</h1>
+
+		<div>
+				import android.os.Bundle;
+import android.app.Activity;
+import org.apache.cordova.*;
+public class MainActivity extends DroidGap{
+@Override
+public void onCreate(Bundle savedInstanceState){
+super.onCreate(savedInstanceState);
+super.loadUrl(“file:///android_asset/www/index.html”);
+}
+
+}
+		</div>
+		
+    </body>
+</html>
